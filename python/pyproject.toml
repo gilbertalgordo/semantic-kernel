@@ -23,7 +23,7 @@ ruff = "0.0.277"
 pytest-asyncio = "0.21.0"
 
 [tool.poetry.group.hugging_face.dependencies]
-transformers = "^4.28.1"
+transformers = "^4.36.0"
 sentence-transformers = "^2.2.2"
 torch = "2.0.0"
 
