@@ -27,7 +27,7 @@ jobs:
     outputs:
       pythonChanges: ${{ steps.filter.outputs.python}}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: dorny/paths-filter@v2
         id: filter
         with:
@@ -109,7 +109,7 @@ jobs:
       AZURE_COSMOS_DB_NO_SQL_URL: ${{ vars.AZURE_COSMOS_DB_NO_SQL_URL }}
       AZURE_COSMOS_DB_NO_SQL_KEY: ${{ secrets.AZURE_COSMOS_DB_NO_SQL_KEY }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Set up uv
         uses: astral-sh/setup-uv@v3
         with:
@@ -284,7 +284,7 @@ jobs:
       AZURE_COSMOS_DB_NO_SQL_URL: ${{ vars.AZURE_COSMOS_DB_NO_SQL_URL }}
       AZURE_COSMOS_DB_NO_SQL_KEY: ${{ secrets.AZURE_COSMOS_DB_NO_SQL_KEY }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Set up uv
         uses: astral-sh/setup-uv@v3
         with:
